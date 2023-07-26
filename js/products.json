@@ -1,0 +1,184 @@
+[
+
+    {
+        "id:" : "zapatilla-nike-01",
+        "title": "Nike 01",
+        "img":"./img/abrigos/01.jpg",
+        "ctg":  {
+            "brand": "Nike",
+            "id": "nike"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-nike-02",
+        "title": "Nike 02",
+        "img": "./img/abrigos/02.jpg",
+        "ctg": {
+            "brand":"Nike",
+            "id": "nike"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-nike-03",
+        "title": "Nike 03",
+        "img": "./img/abrigos/03.jpg",
+        "ctg": {
+            "brand": "Nike",
+            "id": "nike"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-nike-04",
+        "title": "Nike 04",
+        "img":"./img/abrigos/04.jpg",
+        "ctg":  {
+            "brand": "Nike",
+            "id": "nike"
+        },
+        "price":1000
+    },
+    {
+        "id": "zapatilla-nike-05",
+        "title": "Nike 05",
+        "img":"./img/abrigos/05.jpg",
+        "ctg":  {
+            "brand": "Nike",
+            "id": "nike"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-01",
+        "title": "Puma 01",
+        "img": "./img/camisetas/01.jpg",
+        "ctg": {
+            "brand": "Puma",
+            "id":"puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-02",
+        "title": "Puma 02",
+        "img": "./img/camisetas/02.jpg",
+        "ctg":  {
+            "brand": "Puma",
+            "id":"puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-03",
+        "title": "Puma 03",
+        "img": "./img/camisetas/03.jpg",
+        "ctg":  {
+            "brand": "Puma",
+            "id":"puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-03",
+        "title": "Puma 03",
+        "img": "./img/camisetas/04.jpg",
+        "ctg": {
+            "brand": "Puma",
+            "id": "puma"
+        },
+        "price": 1000
+    },
+    {
+        "id":"zapatilla-puma-04",
+        "title": "Puma 04",
+        "img": "./img/camisetas/05.jpg",
+        "ctg": {
+            "brand": "Puma",
+            "id": "puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-05",
+        "title": "Puma 05",
+        "img": "./img/camisetas/06.jpg",
+        "ctg": {
+            "brand": "Puma",
+            "id": "puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-06",
+        "title": "Puma 06",
+        "img": "./img/camisetas/07.jpg",
+        "ctg": {
+            "brand": "Puma",
+            "id": "puma"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-puma-07",
+        "title": "Puma 07",
+        "img": "./img/camisetas/08.jpg",
+        "ctg":  {
+            "brand": "Puma",
+            "id": "puma"
+        },
+        "price": 1000
+    },
+    
+    {
+        "id": "zapatilla-adidas-01",
+        "title": "Adidas 01",
+        "img": "./img/pantalones/01.jpg",
+        "ctg":  {
+            "brand": "Adidas",
+            "id": "Adidas"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-adidas-02",
+        "title": "Adidas 02",
+        "img": "./img/pantalones/02.jpg",
+        "ctg":  {
+            "brand": "Adidas",
+            "id":"Adidas"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-adidas-03",
+        "title": "Adidas 03",
+        "img":"./img/pantalones/03.jpg",
+        "ctg":  {
+            "brand": "Adidas",
+            "id":"Adidas"
+        },
+        "price": 1000
+    },
+    {
+        "id": "zapatilla-adidas-04",
+        "title": "Adidas 04",
+        "img": "./img/pantalones/04.jpg",
+        "ctg":  {
+            "brand": "Adidas",
+            "id": "Adidas"
+        },
+        "price": "1000"
+    },
+    {
+        "id": "zapatilla-adidas-05",
+        "title" : "Adidas 05",
+        "img": "./img/pantalones/05.jpg",
+        "ctg": {
+        "brand": "Adidas",
+        "id":"Adidas"
+    },
+        "price": "1000"
+    }
+]

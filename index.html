@@ -1,14 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LifeKickz</title>
+    <link rel="shortcut icon" href="img/logo-web.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
+
 <body>
 
-        <script src="js/main.js" defer></script>
-        <script src="js/shopCart.js" defer></script>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="logo"> Life Kickz</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                        <li class="nav-item item-bar">
+                            <a class="nav-link item-bar" aria-current="page"
+                                href="index.html"><strong>INICIO</strong></a>
+                        </li>
+                        <li class="nav-item item-bar">
+                            <a class="nav-link item-bar" href="html/all-products.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                MARCAS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="html/productos/jordan.html">Jordan</a></li>
+                                <li><a class="dropdown-item" href="html/productos/nike.html">Nike Sportswear</a></li>
+                                <li><a class="dropdown-item" href="html/productos/adidas.html">Adidas</a></li>
+                                <li><a class="dropdown-item" href="html/productos/puma.html">Puma</a></li>
+                                <li><a class="dropdown-item" href="html/productos/new-balance.html">New Balance</a></li>
+        
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http:://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search btnSearch"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                    </form>
+                    <div class="nav-cart">
+                        <a href="html/cart.html"><button class="btn btn-outline-success " type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg></button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active img-fluid">
+                    <img src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/05971f9e-9d51-4e36-86c4-0070e1eb3631___7be623c11f3fcc797eb719c8078980c8.jpg"
+                        class="d-block w-100 mt-3 mb-3" alt="people-in-the-field-advertising-nike">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ar.puma.com/media/contentmanager/content/23SS_ECOM_Global_RT_NITRO_Deviate-2_FullBleedHero_Desktop_1440x500_1_2.jpg"
+                        class="d-block w-100 mt-3 mb-3" alt="two-people-running-advertising-puma-sneakers">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.newbalance.com.ar/media/wysiwyg/sliders/newbalance/Banner-5740-Mayo-min.jpg"
+                        class="d-block w-100 mt-3 mb-3" alt="advertising-of-new-colors-in-new-balance-shoe">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>ACERCA DE NOSOTROS</h6>
+                    <p class="text-justify">LifeKickz.com. Somos una compañía de ventas<i>en sneakers con más de 5 años
+                            de historia en el mercado Argentino,</i>
+                        comercializando una amplia variedad de productos de marcas de primera línea. LifeKickz es una
+                        marca viva, que se adapta al ritmo de la
+                        ciudad, por eso cambiamos constantenmente de colores y texturas en nuestro logo, porque somos
+                        dinámicos, diversos, transgresores y nos gusta estar en sintonía con la tendencia del momento,
+                        igual
+                        que nuestros clientes! Comprendemos que cada persona tiene un círculo propio y único, donde
+                        interactúa, se relaciona, se complementa con los demás, con su entorno. Este elemento tan
+                        importante
+                        nos interesa, tu círculo nos interesa, queremos ser parte de tu círculo por eso nuestra frase
+                        #LIFEKICKZYOURCIRCLE. ¿Entrás? </p>
+
+
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>MARCAS</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Nike</a></li>
+                        <li><a href="">Adidas</a></li>
+                        <li><a href="">Puma</a></li>
+                        <li><a href="">New Balance</a></li>
+                        <li><a href="">Vans</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>AYUDA</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Nuestras sucursales</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href=https://autogestion.produccion.gob.ar/consumidores target="_blank">Defensa del
+                                consumidor</a></li>
+                        <li><a href="">Contactate</a></li>
+                        <li><a href="">Ver todos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="">LifeKickz</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/uly003/" target="_blank"><img
+                                    src="img/social-media-facebook.png" alt="logo-facebook" width="24px"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/life_.kickz/?hl=es-la"
+                                target="_blank"><img src="img/social-instagram.png" alt="logo-instagram" width="24px"><i
+                                    class="fa fa-instagram"></i></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/@lifekickz9754" target="_blank"><img
+                                    src="img/social-video-youtube.png" alt="logo-youtube" width="24px"><i
+                                    class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/shopCart.js" defer></script>
+
 </body>
+
 </html>

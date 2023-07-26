@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeKickz</title>
+    <link rel="shortcut icon" href="img/logo-web.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <section class="layout">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <h1 class="logo"> Life Kickz</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+                            <li class="nav-item item-bar">
+                                <a class="nav-link item-bar" aria-current="page"
+                                    href="index.html"><strong>INICIO</strong></a>
+                            </li>
+                            <li class="nav-item item-bar">
+                                <a class="nav-link item-bar" href="html/productos/all-productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    MARCAS
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="html/productos/jordan.html">Jordan</a></li>
+                                    <li><a class="dropdown-item" href="html/productos/nike.html">Nike Sportswear</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="html/productos/adidas.html">Adidas</a></li>
+                                    <li><a class="dropdown-item" href="html/productos/puma.html">Puma</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><svg
+                                    xmlns="http:://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search btnSearch" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg></button>
+                        </form>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h2 class="title-product-major" id="titleProductMajor">Carrito</h2>
+            <div id="container-cart" class="container-cart"> </div>
+                    <p id="cart-empty" class="cart-empty">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+    
+                    <div id="cart-products" class="cart-products disabled">
+                        <!-- Esto se va a completar con el JS -->
+                    </div>
+    
+                    <div id="cart-actions" class="cart-actions disabled">
+                        <div class="cart-actions-left">
+                            <button id="cart-actions-empty" class="cart-actions-empty">Vaciar carrito</button>
+                        </div>
+                        <div class="cart-actions-right">
+                            <div class="cart-actions-total">
+                                <p>Total:</p>
+                                <p id="total">$3000</p>
+                            </div>
+                            <button id="cart-actions-buy" class="cart-actions-buy">Comprar ahora</button>
+                        </div>
+                    </div>
+    
+                    <p id="cart-bought" class="cart-bought disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+    
+                </div>
+            </main>
+        </main>
+
+        <footer class="footer site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>ACERCA DE NOSOTROS</h6>
+                        <p class="text-justify">LifeKickz.com. Somos una compañía de ventas<i>en sneakers con más de
+                                5 años
+                                de historia en el mercado Argentino,</i>
+                            comercializando una amplia variedad de productos de marcas de primera línea. LifeKickz
+                            es una
+                            marca viva, que se adapta al ritmo de la
+                            ciudad, por eso cambiamos constantenmente de colores y texturas en nuestro logo, porque
+                            somos
+                            dinámicos, diversos, transgresores y nos gusta estar en sintonía con la tendencia del
+                            momento,
+                            igual
+                            que nuestros clientes! Comprendemos que cada persona tiene un círculo propio y único,
+                            donde
+                            interactúa, se relaciona, se complementa con los demás, con su entorno. Este elemento
+                            tan
+                            importante
+                            nos interesa, tu círculo nos interesa, queremos ser parte de tu círculo por eso nuestra
+                            frase
+                            #LIFEKICKZYOURCIRCLE. ¿Entrás? </p>
+
+
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>MARCAS</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Nike</a></li>
+                            <li><a href="">Adidas</a></li>
+                            <li><a href="">Puma</a></li>
+                            <li><a href="">New Balance</a></li>
+                            <li><a href="">Vans</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>AYUDA</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Nuestras sucursales</a></li>
+                            <li><a href="">Términos y condiciones</a></li>
+                            <li><a href=https://autogestion.produccion.gob.ar/consumidores target="_blank">Defensa
+                                    del
+                                    consumidor</a></li>
+                            <li><a href="">Contactate</a></li>
+                            <li><a href="">Ver todos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="">LifeKickz</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="https://www.facebook.com/uly003/" target="_blank"><img
+                                        src="../img/social-media-facebook.png" alt="logo-facebook" width="24px"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/life_.kickz/?hl=es-la"
+                                    target="_blank"><img src="../img/social-instagram.png" alt="logo-instagram"
+                                        width="24px"><i class="fa fa-instagram"></i></a></li>
+                            <li><a class="youtube" href="https://www.youtube.com/@lifekickz9754" target="_blank"><img
+                                        src="../img/social-video-youtube.png" alt="logo-youtube" width="24px"><i
+                                        class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </section>
+</body>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/shopCart.js" defer></script>
+
+</html>
