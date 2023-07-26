@@ -1,25 +1,24 @@
-
 let products = [];
-
-fetch("./js/products.json")
+fetch("../js/products.json")
     .then(response => response.json())
     .then(data => {
         products = data;
         loadProducts(products);
     })
 
-    
+
+
 const containerProducts = document.querySelector("#container-products")
 const btnMains = document.querySelectorAll(".btn-main");
 const titleProductMajor = document.querySelector (".title-product-major");
-const btnAddProduct = document.querySelectorAll (".btn-add-product")
-const btnshopcart = document.querySelector ("btn-shop-cart")
+let btnAddProduct = document.querySelectorAll("btnAddProduct");
+const btnshopcart = document.querySelector ("#btnshopcart")
 
 
 
 function loadProducts(filterProducts) {
 
-    containerProducts.innerHTML = "";
+  containerProducts.innerHTML = "";
 
     filterProducts.forEach(product => {
         
@@ -30,7 +29,7 @@ function loadProducts(filterProducts) {
         <div class="details-product">
        <h2 class="title-product">${product.title}</h2>
        <p class="price-product">${product.price}</p>
-       <button class="btn-add-product btn btn-primary" id=${product.id}>COMPRAR</button> 
+       <button class="btnAddProduct btn btn-primary" id=${product.id}>COMPRAR</button> 
        </div>
        `;
 
@@ -38,53 +37,70 @@ function loadProducts(filterProducts) {
     })
 
     resetBtnAdd();
+
 }
 
 loadProducts(products);
 
 
-btnMains.forEach(buttom => {
-    buttom.addEventListener("click", (e) => {
+ btnMains.forEach(buttom => {
+ buttom.addEventListener("click", (e) => {
 
         btnMains.forEach(buttom => buttom.classList.remove("active"));
         e.currentTarget.classList.add("active");
         if (e.currentTarget.id != "allproducts") {
             const productCategory = products.find(product => product.ctg.id === e.currentTarget.id);
             titleProductMajor.innerText = productCategory.ctg.brand;
-            const productosBoton = products.filter(product => product.ctg.id === e.currentTarget.id);
-            loadProducts(btnMains);
+            const productsButtom = products.filter(product => product.ctg.id === e.currentTarget.id);
+            loadProducts(productsButtom);
         } else {
            titleProductMajor.innerText = "Todos los productos";
             loadProducts(products);
         }
 
-    })
-});
+   })
+ });
 
-function resetBtnAdd () {
-    btnAddProduct = document.querySelectorAll (".btn-add-product");
-    btnAddProduct.forEach(buttom => {
-        buttom.addEventListener("click", loadCart);
-    })
+
+ function resetBtnAdd () {
+     btnAddProduct = document.querySelectorAll(".btnAddProduct");
+     btnAddProduct.forEach(button => {
+        button.addEventListener("click", addToCart);
+     })
 }
 
-const productsInCart = [];
+let productsInCart = [];
+let productsInCartLS = localStorage.getItem("products-in-cart");
 
-function loadCart (e) {
-    const idButtom = e.currentTarget.id;
-    const productAdd = products.find(product => product.id === idButtom);
 
-    if(productsInCart.some(product => product.id === idButtom)) {
-        const index = productsInCart.findIndex(product => product.id === idButtom);
-       productsInCart[index].amount++;
+if (productsInCartLS){
+    productsInCart = JSON.parse(productsInCartLS);
+    resetBtnShopCart();
+} else {
+    productsInCart = [];
+}
+
+
+function addToCart (e) {
+    const idButton = e.currentTarget.id;
+    const productAdd = products.find(product => product.id === idButton);
+
+    if(productsInCart.some( product => product.id === idButton)){
+      const index = productsInCart.findIndex(product => product.id === idButton);
+      productsInCart[index].amount++
     } else {
-       productAdd.amount = 1;
-       productsInCart.push(productAdd);
+        productAdd.amount = 1;
+    productsInCart.push(productAdd);
     }
 
-    productsInCart.push (productAdd)
-}
+    resetBtnShopCart();
 
+    localStorage.setItem("products-in-cart", JSON.stringify(productsInCart))
+}
+ 
 function resetBtnShopCart () {
-    let btnshopcart = productsInCart.reduce((acc, product) => acc + product.amount, 0);
+    let newBtnCart = productsInCart.reduce((acc, product) => acc + product.amount, 0);
+    console.log (newBtnCart)
+    btnshopcart.innerText = newBtnCart;
+
 }

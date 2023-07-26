@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LifeKickz</title>
-    <link rel="shortcut icon" href="img/logo-web.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logo-web.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 
@@ -29,23 +30,10 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                             <li class="nav-item item-bar">
                                 <a class="nav-link item-bar" aria-current="page"
-                                    href="index.html"><strong>INICIO</strong></a>
+                                    href="../index.html"><strong>INICIO</strong></a>
                             </li>
                             <li class="nav-item item-bar">
                                 <a class="nav-link item-bar" href="html/productos/all-productos.html">PRODUCTOS</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    MARCAS
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="html/productos/jordan.html">Jordan</a></li>
-                                    <li><a class="dropdown-item" href="html/productos/nike.html">Nike Sportswear</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="html/productos/adidas.html">Adidas</a></li>
-                                    <li><a class="dropdown-item" href="html/productos/puma.html">Puma</a></li>
-                                </ul>
                             </li>
 
                         </ul>
@@ -59,15 +47,6 @@
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                 </svg></button>
                         </form>
-                        <div class="nav-cart">
-                            <button class="btn btn-outline-success " type="submit"><a href="cart.html"></a><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-cart3" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                </svg></button>
-
-                        </div>
                     </div>
                 </div>
             </nav>
@@ -80,17 +59,17 @@
                     <button id="allproducts" class="btn-main active"> Todos los productos</button>
                 </li>
                 <li>
-                    <button id="nikeproducts" class="btn-main"> Nike</button>
+                    <button id="nike" class="btn-main"> Nike</button>
                 </li>
                 <li>
-                    <button id="adidasproducts" class="btn-main"> Adidas</button>
+                    <button id="adidas" class="btn-main"> Adidas</button>
                 </li>
                 <li>
-                    <button id="pumaproducts" class="btn-main"> Puma</button>
+                    <button id="puma" class="btn-main"> Puma</button>
                 </li>
                 <li>
-                    <a class="btn-main btn-cart" href="./carrito.html"> Carrito <span id="btn-shop-cart"
-                            class="btn-shop-cart">0</span>
+                    <a class="btn-main btn-cart" href="cart.html"> Carrito <span id="btnshopcart"
+                            class="btnshopcart">0</span>
                     </a>
                 </li>
             </ul>
@@ -99,7 +78,9 @@
 
         <main class="main">
             <h2 class="title-product-major" id="titleProductMajor">Todos los productos</h2>
-            <div id="container-products" class="container-products"> </div>
+            <div id="container-products" class="container-products"> 
+                
+            </div>
         </main>
 
         <footer class="footer site-footer">
@@ -185,9 +166,9 @@
 
 
     </section>
-</body>
-
 <script src="../js/main.js" defer></script>
 <script src="../js/shopCart.js" defer></script>
+</body>
+
 
 </html>
