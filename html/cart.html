@@ -36,16 +36,6 @@
                                 <a class="nav-link item-bar" href="all-products.html">PRODUCTOS</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><svg
-                                    xmlns="http:://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search btnSearch" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg></button>
-                        </form>
                     </div>
             </nav>
         </header>
@@ -56,7 +46,6 @@
                 <p id="cart-empty" class="cart-empty">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
 
                 <div id="cart-products" class="cart-products disabled">
-                    <!-- Esto se va a completar con el JS -->
                 </div>
 
                 <div id="cart-actions" class="cart-actions disabled">
@@ -158,16 +147,12 @@
                 </div>
             </div>
         </footer>
-
-
-
-
     </section>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/shopCart.js" ></script>
-    <script src="../js/main.js" ></script>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/shopCart.js" defer></script>
+    <script src="../js/main.js" defer></script>
 
 </body>
 

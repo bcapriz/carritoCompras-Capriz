@@ -1,26 +1,25 @@
 [
-
     {
-        "id:" : "zapatilla-nike-01",
+        "id:": "zapatilla-nike-01",
         "title": "Nike 01",
-        "img":"https://static.nike.com/a/images/l1hpo70xiadbj8itqw2s/sail-racer-blue-cone-black.png",
-        "ctg":  {
+        "img": "https://static.nike.com/a/images/l1hpo70xiadbj8itqw2s/sail-racer-blue-cone-black.png",
+        "ctg": {
             "brand": "Nike",
             "id": "nike"
         },
         "price": 111000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-nike-02",
         "title": "Nike 02",
         "img": "https://static.nike.com/a/images/u7tflmowluquhwlzngi0/white-metallic-gold-varsity-red.png",
         "ctg": {
-            "brand":"Nike",
+            "brand": "Nike",
             "id": "nike"
         },
         "price": 89000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-nike-03",
@@ -31,52 +30,51 @@
             "id": "nike"
         },
         "price": 87000,
-        "amount" :1
+        "amount": 1
     },
     {
         "id": "zapatilla-nike-04",
         "title": "Nike 04",
-        "img":"https://static.nike.com/a/images/ycncap93xn5eypgd7u9o/light-bone-white-metallic-gold.png",
-        "ctg":  {
+        "img": "https://static.nike.com/a/images/ycncap93xn5eypgd7u9o/light-bone-white-metallic-gold.png",
+        "ctg": {
             "brand": "Nike",
             "id": "nike"
         },
         "price": 70000,
-        "amount" :1
+        "amount": 1
     },
     {
         "id": "zapatilla-nike-05",
         "title": "Nike 05",
-        "img":"https://static.nike.com/a/images/ycncap93xn5eypgd7u9o/light-bone-white-metallic-gold.png",
-        "ctg":  {
+        "img": "https://static.nike.com/a/images/ycncap93xn5eypgd7u9o/light-bone-white-metallic-gold.png",
+        "ctg": {
             "brand": "Nike",
             "id": "nike"
         },
         "price": 90000,
-        "amount" : 1
+        "amount": 1
     },
-
     {
         "id": "zapatilla-puma-01",
         "title": "Puma 01",
         "img": "https://www.moov.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw221e1312/products/PU387180-02/PU387180-02-1.JPG",
         "ctg": {
             "brand": "Puma",
-            "id":"puma"
+            "id": "puma"
         },
         "price": 50000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-puma-02",
         "title": "Puma 02",
         "img": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_480,h_480/global/388992/01/sv01/fnd/ARG/fmt/png",
-        "ctg":  {
+        "ctg": {
             "brand": "Puma",
-            "id":"puma"
+            "id": "puma"
         },
         "price": 120000,
-        "amount" :1
+        "amount": 1
     },
     {
         "id": "zapatilla-puma-03",
@@ -87,10 +85,10 @@
             "id": "puma"
         },
         "price": 69000,
-        "amount" : 1
+        "amount": 1
     },
     {
-        "id":"zapatilla-puma-04",
+        "id": "zapatilla-puma-04",
         "title": "Puma 04",
         "img": "https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw6845cc52/products/PU392410-01/PU392410-01-1.JPG",
         "ctg": {
@@ -98,7 +96,7 @@
             "id": "puma"
         },
         "price": 55000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-puma-05",
@@ -109,7 +107,7 @@
             "id": "puma"
         },
         "price": 78000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-puma-06",
@@ -120,73 +118,72 @@
             "id": "puma"
         },
         "price": 67000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-puma-07",
         "title": "Puma 07",
         "img": "https://static.theline.cl/img/products/382278-01-1_1024.png",
-        "ctg":  {
+        "ctg": {
             "brand": "Puma",
             "id": "puma"
         },
         "price": 90000,
-        "amount" : 1
+        "amount": 1
     },
-    
     {
         "id": "zapatilla-adidas-01",
         "title": "Adidas 01",
         "img": "https://thentwrk.com/cdn-cgi/image/width=3840,fit=cover,quality=75,format=auto/https:/d23yq4wa4lw6cl.cloudfront.net/s/files/1/0212/4102/products/EF2829.jpg?v=1656343415",
-        "ctg":  {
+        "ctg": {
             "brand": "Adidas",
             "id": "adidas"
         },
         "price": 58000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-adidas-02",
         "title": "Adidas 02",
         "img": "https://images.stockx.com/images/adidas-Yeezy-Boost-350-V2-Static-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1606321247",
-        "ctg":  {
+        "ctg": {
             "brand": "Adidas",
-            "id":"adidas"
+            "id": "adidas"
         },
         "price": 73000,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-adidas-03",
         "title": "Adidas 03",
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDjHFeX6yRlHvDxC0VhVxsb58dp_GhIu3IfsAZ6ISoA&s",
-        "ctg":  {
+        "img": "https://assets.adidas.com/images/w_600,f_auto,q_auto/618e1dde3e824688a4deaf5c0084ea50_9366/Zapatillas_adidas_Grand_Court_Base_Lifestyle_Court_Casual_Blanco_HR0234_01_standard.jpg",
+        "ctg": {
             "brand": "Adidas",
-            "id":"adidas"
+            "id": "adidas"
         },
         "price": 57500,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-adidas-04",
         "title": "Adidas 04",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0xyWX05KMOTM0vI1v9XZZztTc9YuOkZSO4g&usqp=CAU",
-        "ctg":  {
+        "ctg": {
             "brand": "Adidas",
             "id": "adidas"
         },
         "price": 67500,
-        "amount" : 1
+        "amount": 1
     },
     {
         "id": "zapatilla-adidas-05",
-        "title" : "Adidas 05",
+        "title": "Adidas 05",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPXHXzLy0u9b4kAwhxRKY4LyhTkFfAPL4njw&usqp=CAU",
         "ctg": {
-        "brand": "Adidas",
-        "id":"adidas"
-    },
+            "brand": "Adidas",
+            "id": "adidas"
+        },
         "price": 92500,
-        "amount" : 1
+        "amount": 1
     }
 ]

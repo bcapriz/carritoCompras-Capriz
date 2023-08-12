@@ -1,4 +1,5 @@
 let products = [];
+
 fetch("../js/products.json")
     .then(response => response.json())
     .then(data => {
@@ -6,30 +7,29 @@ fetch("../js/products.json")
         loadProducts(products);
     })
 
-
-
 const containerProducts = document.querySelector("#container-products")
 const btnMains = document.querySelectorAll(".btn-main");
-const titleProductMajor = document.querySelector (".title-product-major");
+const titleProductMajor = document.querySelector(".title-product-major");
 let btnAddProduct = document.querySelectorAll("btnAddProduct");
-const btnshopcart = document.querySelector ("#btnshopcart")
+const btnshopcart = document.querySelector("#btnshopcart")
 
 
 
 function loadProducts(filterProducts) {
 
-  containerProducts.innerHTML = "";
+    containerProducts.innerHTML = "";
 
     filterProducts.forEach(product => {
-        
+
         const div = document.createElement("div");
         div.classList.add("product");
         div.innerHTML = `
-       <img class="img-product img-fluid" src="${product.img}" alt="zapatillas-nike-air-jordan-v-retro-sail/racer">=
+       <img class="img-product img-fluid" src="${product.img}" alt="zapatillas-nike-air-jordan-v-retro-sail/racer">
+       <div class="separador"></div>
         <div class="details-product">
        <h2 class="title-product">${product.title}</h2>
-       <p class="price-product">${product.price}</p>
-       <button class="btnAddProduct btn btn-primary" id=${product.id}>COMPRAR</button> 
+       <p class="price-product"> Precio: $${product.price}</p>
+       <button class="btnAddProduct btn-add-product" id=${product.id}>Comprar</button> 
        </div>
        `;
 
@@ -43,8 +43,8 @@ function loadProducts(filterProducts) {
 loadProducts(products);
 
 
- btnMains.forEach(buttom => {
- buttom.addEventListener("click", (e) => {
+btnMains.forEach(buttom => {
+    buttom.addEventListener("click", (e) => {
 
         btnMains.forEach(buttom => buttom.classList.remove("active"));
         e.currentTarget.classList.add("active");
@@ -54,26 +54,26 @@ loadProducts(products);
             const productsButtom = products.filter(product => product.ctg.id === e.currentTarget.id);
             loadProducts(productsButtom);
         } else {
-           titleProductMajor.innerText = "Todos los productos";
+            titleProductMajor.innerText = "Todos los productos";
             loadProducts(products);
         }
 
-   })
- });
+    })
+});
 
 
- function resetBtnAdd () {
-     btnAddProduct = document.querySelectorAll(".btnAddProduct");
-     btnAddProduct.forEach(button => {
+function resetBtnAdd() {
+    btnAddProduct = document.querySelectorAll(".btnAddProduct");
+    btnAddProduct.forEach(button => {
         button.addEventListener("click", addToCart);
-     })
+    })
 }
 
-let productsInCart = [];
-let productsInCartLS = localStorage.getItem("products-in-cart");
+let productsInCart;
+let productsInCartLS = localStorage.getItem("products-in-cart)");
 
 
-if (productsInCartLS){
+if (productsInCartLS) {
     productsInCart = JSON.parse(productsInCartLS);
     resetBtnShopCart();
 } else {
@@ -81,26 +81,26 @@ if (productsInCartLS){
 }
 
 
-function addToCart (e) {
+function addToCart(e) {
     const idButton = e.currentTarget.id;
     const productAdd = products.find(product => product.id === idButton);
 
-    if(productsInCart.some( product => product.id === idButton)){
-      const index = productsInCart.findIndex(product => product.id === idButton);
-      productsInCart[index].amount++
+    if (productsInCart.some(product => product.id === idButton)) {
+        const index = productsInCart.findIndex(product => product.id === idButton);
+        productsInCart[index].amount++
     } else {
         productAdd.amount = 1;
-    productsInCart.push(productAdd);
+        productsInCart.push(productAdd);
     }
 
     resetBtnShopCart();
 
     localStorage.setItem("products-in-cart", JSON.stringify(productsInCart))
 }
- 
-function resetBtnShopCart () {
+
+function resetBtnShopCart() {
     let newBtnCart = productsInCart.reduce((acc, product) => acc + product.amount, 0);
-    console.log (newBtnCart)
+    console.log(newBtnCart)
     btnshopcart.innerText = newBtnCart;
 
 }

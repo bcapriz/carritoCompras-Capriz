@@ -18,7 +18,7 @@
         <header class="header">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="../index.html">
                         <h1 class="logo"> Life Kickz</h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,20 +33,10 @@
                                     href="../index.html"><strong>INICIO</strong></a>
                             </li>
                             <li class="nav-item item-bar">
-                                <a class="nav-link item-bar" href="html/productos/all-productos.html">PRODUCTOS</a>
+                                <a class="nav-link item-bar" href="../html/all-products.html">PRODUCTOS</a>
                             </li>
 
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
-                                aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><svg
-                                    xmlns="http:://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-search btnSearch" viewBox="0 0 16 16">
-                                    <path
-                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                </svg></button>
-                        </form>
                     </div>
                 </div>
             </nav>
@@ -55,19 +45,19 @@
 
         <section class="leftSide">
             <ul class="main-products">
-                <li>
+                <li class="li-main">
                     <button id="allproducts" class="btn-main active"> Todos los productos</button>
                 </li>
-                <li>
+                <li class="li-main">
                     <button id="nike" class="btn-main"> Nike</button>
                 </li>
-                <li>
+                <li class="li-main">
                     <button id="adidas" class="btn-main"> Adidas</button>
                 </li>
-                <li>
+                <li class="li-main">
                     <button id="puma" class="btn-main"> Puma</button>
-                </li>
-                <li>
+                </li class="li-main">
+                <li class="li-main">
                     <a class="btn-main btn-cart" href="cart.html"> Carrito <span id="btnshopcart"
                             class="btnshopcart">0</span>
                     </a>
@@ -78,8 +68,8 @@
 
         <main class="main">
             <h2 class="title-product-major" id="titleProductMajor">Todos los productos</h2>
-            <div id="container-products" class="container-products"> 
-                
+            <div id="container-products" class="container-products">
+
             </div>
         </main>
 
@@ -166,8 +156,8 @@
 
 
     </section>
-<script src="../js/main.js" defer></script>
-<script src="../js/shopCart.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/shopCart.js" defer></script>
 </body>
 
 
